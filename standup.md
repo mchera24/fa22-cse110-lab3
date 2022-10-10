@@ -4,22 +4,7 @@
 This template is created to assist the team in providing status updates on the project. Please be
 honest and truthful when filling this out. Thank You.
 
-Below are the basic questions that should be asked to all team members.
-
-## Full Name: 
-
-###### What exactly did you work on yesterday or previously?
-
-###### List all completed parts of project that you worked on here.
-
-###### What exactly do you plan on working on today, if you have not already?
-
-###### What are your goals for this week?
-
-###### What problems did you encounter so far, if any? Can you figure out the solution or do you need assistance?
-
-###### Do you forsee any future problems that we should know about?
-
+Below are the basic questions that should be asked to all team members. Please ensure that you ask each team member these questions and take notes on their responses.
 
 ## Full Name: 
 
@@ -71,7 +56,7 @@ Below are the basic questions that should be asked to all team members.
    
 7. Is there anything else you would like to report to us?
 
-**EXAMPLE USAGE**
+## **EXAMPLE USAGE**
 Below is an example of standup meeting responses:
 
 ## Full Name: 
