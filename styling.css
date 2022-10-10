@@ -1,0 +1,124 @@
+body
+{
+    background-color: yellow
+}
+/* heading */
+.heading
+{
+    color: yellow;
+    background-color:purple;
+    font-size: 40px; /* absolute unit */
+    line-height: 7pc; /* absolute unit */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/* fix margin issue */
+.heading h1
+{
+    margin: auto;
+}
+
+/* all h2 tags */
+h2
+{
+    color: rgb(49, 219, 219);
+    background-color:blueviolet;
+    font-size: 2.5em; /* relative unit */
+}
+
+/* all h3 tags */
+h3
+{
+    color: #4e2fc0;
+    font-size: 1.2rem; /* relative unit */
+}
+
+/* all summary tags */
+summary
+{
+    color: hsl(284, 100%, 50%);
+    font-size: 3ch; /* relative unit */
+}
+
+/* all list tags */
+li
+{
+    font-size: 15pt; /*absolute unit */
+}
+
+/* fix video margin issues */
+video
+{
+    margin: -120px 50px 10px 0px;
+}
+
+/* fixed padding for title */
+.brainstorm
+{
+    padding: 25px 0px 0px 0px;
+}
+
+/* fixed title margin issues */
+.brainstorm h2
+{
+    margin: 0;
+}
+
+/* fixed image padding */
+img
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+/* created a border box */
+.box
+{
+    border-style: solid;
+    border-color:rgb(109, 36, 226);
+    border-radius: 1px;
+    padding: 10px 10px 10px 10px;
+    border-width: 6px;
+    background-color: rgb(92, 216, 185);
+}
+
+/* below alters certain elements that use the border box */
+.box li
+{
+    list-style-position: inside;
+}
+
+footer .box
+{
+    width: fit-content;
+}
+
+#topic .box
+{
+    width: fit-content;
+}
+
+#attendance .box 
+{
+    width: fit-content;
+}
+
+#agenda .box
+{
+    width: fit-content;
+}
+
+#new .box
+{
+    width: fit-content;
+}
+
+#comments .box
+{
+    width: fit-content;
+}
