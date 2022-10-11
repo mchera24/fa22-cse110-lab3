@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 body
 {
-    background-color: yellow
+    background-color: yellow;
+    width: fit-content;
 }
 /* heading */
 .heading
@@ -11,14 +13,17 @@ body
     line-height: 7pc; /* absolute unit */
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 400px;
+    margin-left: 400px;
+    display: inline-block;
+    font-family: 'Silkscreen', cursive;
 }
 
 /* fix margin issue */
 .heading h1
 {
     margin: auto;
+    text-align: center;
 }
 
 /* all h2 tags */
@@ -27,6 +32,17 @@ h2
     color: rgb(49, 219, 219);
     background-color:blueviolet;
     font-size: 2.5em; /* relative unit */
+    display: block;
+    text-decoration: underline;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+li h3
+{
+    color:rgb(9, 255, 0);
 }
 
 /* all h3 tags */
@@ -34,6 +50,31 @@ h3
 {
     color: #4e2fc0;
     font-size: 1.2rem; /* relative unit */
+}
+
+h2, h3
+{
+    font-family: 'Silkscreen', cursive;
+}
+
+section > details
+{
+    color: rgb(167, 7, 100);
+}
+
+section + h2
+{
+    background-color: yellow;
+}
+
+ul ~ li
+{
+    background-color: purple;
+}
+
+h3.box
+{
+    color: white;
 }
 
 /* all summary tags */
@@ -53,6 +94,9 @@ li
 video
 {
     margin: -120px 50px 10px 0px;
+    display: block;
+    margin: -120px auto;
+    margin-bottom: 50px;
 }
 
 /* fixed padding for title */
@@ -64,7 +108,7 @@ video
 /* fixed title margin issues */
 .brainstorm h2
 {
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* fixed image padding */
@@ -121,4 +165,258 @@ footer .box
 #comments .box
 {
     width: fit-content;
+}
+
+form
+{
+    height: fit-content;
+    max-width: 1470px;
+    min-width: 400px;
+    position: relative;
+    text-align: center;
+}
+
+details
+{
+    position: static;
+}
+
+li:hover
+{
+    background-color: red;
+    width: fit-content;
+}
+
+li:active
+{
+    color: rgb(9, 255, 0);
+}
+
+footer a:active
+{
+    color: rgb(9, 255, 0);
+}
+
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+
+.flex1
+{
+    width: 30%;
+    height: 101vh;
+    text-align: center;
+}
+
+.flex2
+{
+    width: 30%;
+    height: 101vh;
+    text-align: center;
+}
+
+.flex3
+{
+    width: 30%;
+    height: 101vh;
+    text-align: center;
+}
+
+.grid-container
+{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto;
+}
+
+.grid1
+{
+    grid-column-start: 1;
+}
+
+.grid2
+{
+    grid-column-start: 2;
+}
+
+.grid3
+{
+    grid-column-start: 3;
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+audio
+{
+    display: block;
+    margin: 0 auto;
+}
+
+ul
+{
+    display: block;
+    margin: 0 auto;
+}
+
+ol
+{
+    display: block;
+    margin: 30px auto;
+}
+
+footer *
+{
+    color: green;
+}
+
+img[alt~="#"]
+{
+    border: 5px solid red;
+}
+
+/* Responsive query for phones like iPhone SE */
+@media screen and (max-width: 400px)
+{    
+    .heading
+    {
+        margin: 0;
+        font-size: 10.4px;
+    }
+    h3
+    {
+        font-size: 13px;
+    }
+    h2
+    {
+        font-size: 28px;
+        margin-left: 5px;
+    }
+    .brainstorm h2
+    {
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    #comments h2
+    {
+        font-size: 15px;
+    }
+    #pictures h2
+    {
+        font-size: 14.5px;
+    }
+    ul
+    {
+        margin-left: 5px;
+    }
+    ol
+    {
+        margin-left: 5px;
+    }
+    form
+    {
+        text-align: left;
+    }
+    #form .box
+    {
+        width: 20%;
+    }
+    #agenda .box
+    {
+        width: 32%;
+    }
+    #unfinished .box
+    {
+        width: 32%;
+    }
+    #new .box
+    {
+        width: 32%;
+    }
+    #comments .box
+    {
+         width: 32%;
+    }
+    #videoaudio h2
+    {
+        font-size: 16.5px;
+    }
+    #videoaudio audio
+    {
+        margin: 0;
+    }
+    footer
+    {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+    .grid-container img
+    {
+        width: 33%;
+    }
+    .flex-container
+    {
+        flex-direction: column;
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .flex-container img
+    {
+        width: 110%;
+        margin-bottom: 30px;
+    }
+    .flex1
+    {
+        width: 30%;
+        height: 101vh;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .flex2
+    {
+        width: 30%;
+        height: 101vh;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .flex3
+    {
+        width: 30%;
+        height: 101vh;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .grid-container
+    {
+        display: grid;
+        row-gap: 20px;
+        grid-template-rows: auto;    
+    }
+    .grid1
+    {
+        grid-row-start: 1;
+    }
+
+    .grid2
+    {
+        grid-column-start: 1;
+    }
+
+    .grid3
+    {
+        grid-column-start: 1;
+    }
 }
