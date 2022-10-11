@@ -1,6 +1,6 @@
-# Lab 2 - HTML and DevTools
+# Lab 3 - CSS and Agile Intro
 
 Created by Mandeep Chera
 
-Part 1 Website: https://mchera24.github.io/Lab2/
+Website: https://mchera24.github.io/fa22-cse110-lab3/
 
