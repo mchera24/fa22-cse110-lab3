@@ -40,6 +40,7 @@ h2
     margin-bottom: 20px;
 }
 
+/* descendant combinator */
 li h3
 {
     color:rgb(9, 255, 0);
@@ -52,26 +53,31 @@ h3
     font-size: 1.2rem; /* relative unit */
 }
 
+/* selector list */
 h2, h3
 {
     font-family: 'Silkscreen', cursive;
 }
 
+/* child combinator */
 section > details
 {
     color: rgb(167, 7, 100);
 }
 
+/* adjacent sibling */
 section + h2
 {
     background-color: yellow;
 }
 
+/* general sibling */
 ul ~ li
 {
     background-color: purple;
 }
 
+/* combining two selectors */
 h3.box
 {
     color: white;
@@ -167,10 +173,11 @@ footer .box
     width: fit-content;
 }
 
+/* fixing form */
 form
 {
     height: fit-content;
-    max-width: 1470px;
+    max-width: 1900px;
     min-width: 400px;
     position: relative;
     text-align: center;
@@ -181,12 +188,14 @@ details
     position: static;
 }
 
+/* adding hover effect */
 li:hover
 {
     background-color: red;
     width: fit-content;
 }
 
+/* adding active link effect */
 li:active
 {
     color: rgb(9, 255, 0);
@@ -197,6 +206,7 @@ footer a:active
     color: rgb(9, 255, 0);
 }
 
+/* flex display with 3 children */
 .flex-container
 {
     display: flex;
@@ -204,6 +214,7 @@ footer a:active
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-basis: auto;
+    margin-bottom: -200px;
 }
 
 .flex1
@@ -227,11 +238,13 @@ footer a:active
     text-align: center;
 }
 
+/* grid display with 3 children */
 .grid-container
 {
     display: grid;
     column-gap: 20px;
     grid-template-columns: auto;
+    justify-items: center;
 }
 
 .grid1
@@ -249,6 +262,7 @@ footer a:active
     grid-column-start: 3;
 }
 
+/* fixing footer */
 footer
 {
     display: flex;
@@ -274,6 +288,7 @@ ol
     margin: 30px auto;
 }
 
+/* universal */
 footer *
 {
     color: green;
@@ -360,6 +375,10 @@ img[alt~="#"]
         justify-content: left;
         align-items: left;
     }
+    .grid-container
+    {
+        justify-items:left;
+    }
     .grid-container img
     {
         width: 33%;
@@ -367,7 +386,7 @@ img[alt~="#"]
     .flex-container
     {
         flex-direction: column;
-        padding-bottom: 50px;
+        padding-bottom: 250px;
         flex-wrap: wrap;
         justify-content: space-between;
     }
